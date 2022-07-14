@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+</head>
+<body style="background-color: #F5F5F5">
+<!-- Navbar  -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+        <div class="navbar-brand border border-3 border-dark" href="#"><a class="navbar-brand ms-1 me-lg-5 text-dark">FrameWork</a></div>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="index.html">Головна</a>
+                </li>
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="web-blog.html">Web-блог</a>
+                </li>
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="course.html">Курси</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-lg-5">
+    <div class="course-content">
+        <h1>Bootstrap</h1>
+        <p class="tx-indent">Bootstrap – CSS-фреймворк для створення крос-браузерних та стандартизованих сайтів з адаптивною версткою.</p>
+        <p class="tx-indent">Адаптивність – його головна перевага.</p>
+        <p class="tx-indent">Фреймворк використовують frontend-, fullstack-розробники. Для роботи з інструментом потрібні мінімальні знання верстки, тому він підходить новачкам. </p>
+        <p class="tx-indent">В цілому, це набір файлів. Після їх підключення до сторінки для верстки стане доступна велика кількість готових компонентів та класів. Вони дозволяють швидко та якісно створювати адаптивний дизайн сайту.</p>
+        <p class="tx-indent">Класи в Bootstrap поділяються на 3 великі групи:</p>
+        <ul>
+            <li>для створення сітки – адаптивного макета сторінки;</li>
+            <li>для стилізації контенту – тексту, зображень, коду, таблиць та іншої інформації;</li>
+            <li>службові – для вирішення популярних допоміжних завдань, таких як відображення та приховування елементів, вирівнювання тексту на сторінці, налаштування кольору фону, відступів тощо.</li>
+        </ul>
+        <p class="tx-indent">Він дотримується принципу "mobile-first", що передбачає початкову розробку сайту для невеликого екрану мобільного телефону, потім контент розміщується згідно з роздільною здатністю планшета і, нарешті, верстальник працює над версією для ноутбука та комп'ютера. Завдяки такому підходу користувач може переглядати сайт на будь-яких пристроях, не відчуваючи найменшої незручності. </p>
+        <p class="tx-indent mt-2">Приклад коду Bootstrap, створення сітки:</p>
+        <pre>
+            &lt;div class="container"&gt;
+                 &lt;div class="row"&gt;
+                     &lt;div class="col-4"&gt;
+                        One of three columns
+                     &lt;/div&gt;
+                    &lt;div class="col-4">
+                        One of three columns
+                    &lt;/div&gt;
+                    &lt;div class="col-4">
+                        One of three columns
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+        <h1>Foundation</h1>
+        <p class="tx-indent">Цей фреймворк – один із популярних у сегменті front-end-фреймворків. Він також має назву ZURB Foundation, тому що ZURB – це назва дизайнерської фірми, яка і створила фреймворк.</p>
+        <p class="tx-indent">Фреймворк складається із CSS-файлів. Він був розроблений для того, щоб дозволити швидко збирати прототипи та формувати код для сучасних сайтів та додатків, які будуть чудово виглядати на будь-яких пристроях.</p>
+        <p class="tx-indent">Foundation був першим фреймворком, який прийняв підхід "mobile-first".</p>
+        <p class="tx-indent">Особливості фреймворку: </p>
+        <ul>
+            <li>Гнучкий макет, що підтримує порядок джерел, зміщення та подання пристроїв.</li>
+            <li>Численні стилі навігації, включаючи комплексну головну панель, яка підтримує трирівневу навігацію для простих панелей, сайдбарів і додаткових ділянок навігації. </li>
+            <li>Довільний плагін Clearing для виведення на екран адаптивних лайтбоксів</li>
+            <li>Reveal – довільний плагін jQuery, що дозволяє виводити прості модальні вікна для всіх пристроїв.</li>
+            <li>Joyride – кроссбраузерний плагін, що дозволяє створити екскурсію по вашому сайту або плагіну.</li>
+        </ul>
+        <p class="tx-indent mt-2">Приклад використання коду Foundation, вкладені стовпці:</p>
+        <pre>
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;small-6 columns&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                         &lt;div class=&quot;small-6 columns&quot;&gt;...&lt;/div&gt;
+                        &lt;div class=&quot;small-6 columns&quot;&gt;...&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+        <h1>UIKIT</h1>
+        <p class="tx-indent"> Фреймворк відрізняється модульною легкою структурою. Є кілька особливостей, які дозволяють йому виділятися натомість сучасних фреймворків. Це markdown – можливість попередньо переглянути сторінку сайту в режимі реального часу. Також можна відзначити синтаксичне підсвічування для HTML. </p>
+        <p class="tx-indent">UIKit – основний фреймворк для створення та управління інтерфейсом користувача (UI). Існує безліч iOs-китів, які створені для допомоги в розробці програм під iPhone, iPad і т.д.</p>
+        <p class="tx-indent">З яких елементів складається UIKit:</p>
+        <ul>
+            <li>eлементи фірмового стилю: модульна сітка, типографіка, кольори, інтервали, зображення, візуальні форми, анімація, звук;</li>
+            <li>елементи інтерфейсу: кнопка та групи кнопок, прапорці (check boxes), форми з полями введення (inputs), підказки, іконки, меню, повідомлення, пагінація, поп-апи, алерти, перемикачі, вкладки та хлібні крихти, таблиці, ярлики та лейбли, галереї, прогрес-бари.</li>
+        </ul>
+    </div>
+</main>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-white', 'shadow');
+        } else {
+            nav.classList.remove('bg-white', 'shadow');
+        }
+    });
+</script>
+</body>
+</html>

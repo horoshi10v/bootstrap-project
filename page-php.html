@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5 - Transparent Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/mycss.css" />
+</head>
+<body style="background-color: #F5F5F5">
+<!-- Navbar  -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+  <div class="container">
+    <div class="navbar-brand border border-3 border-dark" href="#"><a class="navbar-brand ms-1 me-lg-5 text-dark">FrameWork</a></div>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="mx-auto"></div>
+      <ul class="navbar-nav">
+        <li class="nav-item me-lg-5">
+          <a class="nav-link text-dark" href="index.html">Головна</a>
+        </li>
+        <li class="nav-item me-lg-5">
+          <a class="nav-link text-dark" href="web-blog.html">Web-блог</a>
+        </li>
+        <li class="nav-item me-lg-5">
+          <a class="nav-link text-dark" href="course.html">Курси</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container mt-lg-5">
+  <div class="course-content">
+    <h1>YII</h1>
+    <p class="tx-indent">Фреймворк Yii – це сучасний PHP фреймворк для розробки веб-застосунків будь-якого рівня складності. Yii, як і будь-який сучасний фреймворк, реалізує патерн MVC, а це означає, що логіка буде відокремлена від відображення, що зробить код більш чистим та логічним.</p>
+    <p class="tx-indent">Yii пропонує величезну кількість додаткових можливостей, серед яких: безпека (валідація та фільтрація даних, захист від SQL-ін'єкцій та XSS), зручна робота з базами даних, Yii debug та багато іншого, що прискорює роботу зі створення сайту.</p>
+    <p class="tx-indent">Фреймворк є full-stack фреймворком, надаючи безліч перевірених і готових до використання функцій: будівник запитів та ActiveRecord для реляційних та NoSQL баз даних, RESTful API, підтримку багаторівневого кешування тощо. Можна використовувати для створення будь-якого виду веб-додатків. Завдяки своїй основі компонентів, архітектурі та складній підтримці кешування, фреймворк підходить для розробки великомасштабних проектів.</p>
+    <p class="tx-indent">Також Yii надає Gii – візуальний інтерфейс для автоматичної генерації контролерів, моделей та відображень.</p>
+    <p class="tx-indent">Основні переваги та можливості фреймворку:</p>
+    <ul>
+      <li>Забезпечує високу продуктивність щодо інших php-фреймворків;</li>
+      <li>Забезпечує високу продуктивність щодо інших php-фреймворків;</li>
+      <li>Дозволяє кешувати як сторінки цілком, і окремі фрагменти;</li>
+      <li>Здійснює перехоплення та обробку помилок;</li>
+      <li>Має функціонал роботи з формами, забезпечує їх побудову та валідацію;</li>
+      <li>Реалізовано автентифікацію та авторизацію;</li>
+      <li>У фреймворк вбудовані генератори базового PHP-коду для CRUD-операцій;</li>
+      <li>Має можливість підключення сторонніх бібліотек; </li>
+      <li>Працює з міграціями баз даних (генерація, застосування та відкат);</li>
+      <li>Підтримує стиль REST.</li>
+    </ul>
+    <p class="tx-indent mt-2">Приклад коду, клас віджету, в якому зберігається певна кількість функціоналу:</p>
+    <pre>
+      class Citywidget extends CWidget{
+        public $cols = 10;
+        public $name;
+        public $dialogId;
+        public $city_id;
+        public $defaultName = &apos;Город&apos;;
+
+        public function init(){
+            parent::init();
+        }
+
+        public function run(){
+            $this-&gt;render(&apos;citywidget&apos;,[
+                &apos;name&apos;        =&gt; $this-&gt;name,
+                &apos;dialogId&apos;    =&gt; $this-&gt;dialogId,
+                &apos;city_id&apos;     =&gt; $this-&gt;city_id,
+                &apos;cols&apos;        =&gt; $this-&gt;cols,
+                &apos;defaultName&apos; =&gt; $this-&gt;defaultName,
+            ]);
+        }
+      }
+    </pre>
+    <h1>Symfony</h1>
+    <p class="tx-indent">Це PHP-фреймворк з відкритим вихідним кодом, розроблений для веб-застосунків. </p>
+    <p class="tx-indent">Symfony зарекомендував себе фундаментом для веб-сервісів. Він містить багаторазові бібліотеки та компоненти PHP. Такі проекти, як Laravel та Drupal, використовують компоненти Symfony у своїх додатках.
+    Symfony був розроблений, щоб скоротити час створення та обслуговування веб-додатків та уникнути повторюваних завдань. На нього сильно вплинуло середовище Spring.</p>
+    <p class="tx-indent">Головна ідея фреймворку Symfony у тому, що цей фреймворк має модульну структуру. Symfony працює у зв'язці з менеджером проектом Composer і дозволяє збирати проект буквально за кубиками, шматочками.</p>
+    <p class="tx-indent">Компоненти забезпечують єдину спеціалізовану функціональність. Наприклад, компонент HTTP, компонент кешування, компонент файлової системи тощо. Це не що інше, як автономні бібліотеки PHP. Компоненти можуть отримати доступ до будь-якої кількості пакетів. Загальні пакети, що використовуються у платформі, – це FrameworkBundle, FrameworkExtraBundle, DoctrineBundle. Крім цього, у нас можуть бути власні пакети та пакети доктрин. Програма Symfony може незалежно отримувати доступ до компонентів та пакетів.</p>
+    <p class="tx-indent">Приклад коду Symfony, компонент PropertyInfo:</p>
+    <pre>
+      class Product {
+        private $name = &apos;Cake&apos;;
+        private $price = 10;
+
+        public function getName() {
+        return $this-&gt;name;
+        }
+        public function getPrice() {
+        return $this-&gt;price;
+        }
+      }
+      $class = Product::class;
+      $properties = $propertyInfoObj-&gt;getProperties($class);
+      /*
+              Example Result
+               --------------
+               array(2) {
+                         =&gt; string(4) &quot;name&quot;
+                         =&gt; string(5) &quot;price&quot;
+               }
+      */
+    </pre>
+    <h1 class="p-2">Laravel</h1>
+    <p class="tx-indent">PHP фреймворк загального призначення з відкритим кодом. Платформа використовує спільні бібліотеки з Symfony. Так як платформа має відкритий вихідний код, це надає великі можливості для кастомізації, модифікації та розширення програм. Розроблений таким чином веб-додаток є більш практичним та структурованим. Laravel дає можливість розробляти платформи, де потрібна обробка даних, великий трафік та складність.</p>
+    <p class="tx-indent">Основні переваги Laravel:</p>
+    <ul>
+      <li>велика екосистема з миттєвим розгортанням своєї платформи;</li>
+      <li>офіційний сайт надає безліч мануалів та інформації для ознайомлення;</li>
+      <li>документація Laravel близька до досконалості;</li>
+      <li>є власний движок для шаблонів Blade;</li>
+      <li>«гарний» синтаксис мови, який сприяє виконанню необхідних завдань (наприклад, аутентифікації, сесії, кешування та маршрутизації RESTful);</li>
+      <li>власна ORM – Eloquent ORM, що пропонує прості та зручні засоби для роботи з БД;</li>
+      <li>чудова система маршрутизації запитів.</li>
+    </ul>
+    <p class="tx-indent">Laravel – перший фреймворк, що підтримує PSR-4. Прямо із коробки Composer автоматично завантажить усі класи з каталогу app, використовуючи стандарт автозавантаження PSR.</p>
+    <p class="tx-indent">Це означає, що у вас може бути один простір імен для вашої програми, і ви можете структурувати його, як захочете і як вважаєте логічним. Laravel не вимагає від вас розміщення певних файлів у певних папках.</p>
+    <p class="tx-indent mt-2"> Приклад коду Laravel:</p>
+    <pre>
+      &lt;target name=&quot;db-create&quot;&gt;
+        &lt;echo msg=&quot;Create database &apos;${mysql.db}&apos;&quot;/&gt;
+          &lt;pdosqlexec url=&quot;mysql:host=${mysql.host};port=${mysql.port};charset=utf8&quot;
+    		userid=&quot;${mysql.user}&quot;
+                password=&quot;${mysql.password}&quot;&gt;
+            DROP DATABASE IF EXISTS ${mysql.db};
+            CREATE DATABASE ${mysql.db} DEFAULT CHARACTER SET &apos;utf8&apos; COLLATE &apos;utf8_general_ci&apos;;
+          &lt;/pdosqlexec&gt;
+    &lt;/target&gt;
+    </pre>
+  </div>
+</main>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+  var nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 100) {
+      nav.classList.add('bg-white', 'shadow');
+    } else {
+      nav.classList.remove('bg-white', 'shadow');
+    }
+  });
+</script>
+</body>
+</html>

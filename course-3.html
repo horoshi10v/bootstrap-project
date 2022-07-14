@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+</head>
+<body style="background-color: #F5F5F5">
+<!-- Navbar  -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+        <div class="navbar-brand border border-3 border-dark" href="#"><a class="navbar-brand ms-1 me-lg-5 text-dark">FrameWork</a></div>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="index.html">Головна</a>
+                </li>
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="web-blog.html">Web-блог</a>
+                </li>
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="course.html">Курси</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-lg-5">
+    <div class="course-content">
+        <h1>Власний проект</h1>
+        <br>
+        <p class="tx-indent">На даному етапі ви зможете створити сайт із самостійно обраним фреймворком, який ви вважаєте підходящим. У відеоролику нижче як приклад продемонстровано створення проекту за допомогою найпопулярнішого фреймворку ReactJS мовою JavaScript.</p>
+    </div>
+    <div class="video-wrapper mt-lg-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/I2UBjN5ER4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
+</main>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-white', 'shadow');
+        } else {
+            nav.classList.remove('bg-white', 'shadow');
+        }
+    });
+</script>
+</body>
+</html>

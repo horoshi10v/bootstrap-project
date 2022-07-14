@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+</head>
+<body style="background-color: #F5F5F5">
+<!-- Navbar  -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+        <div class="navbar-brand border border-3 border-dark" href="#"><a class="navbar-brand ms-1 me-lg-5 text-dark">FrameWork</a></div>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="index.html">Головна</a>
+                </li>
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="web-blog.html">Web-блог</a>
+                </li>
+                <li class="nav-item me-lg-5">
+                    <a class="nav-link text-dark" href="course.html">Курси</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-lg-5">
+    <div class="course-content">
+        <h1>React</h1>
+        <p class="tx-indent">Це фреймворк для мови JavaScript, призначений для створення інтерактивних веб-інтерфейсів.</p>
+        <p class="tx-indent">React JS також називають просто React або React.js. </p>
+        <p class="tx-indent">React забезпечує підвищену гнучкість завдяки використанню "компонентів" – коротких ізольованих ділянок коду, які допомагають розробникам створювати складну логіку та UI. React взаємодіє з HTML через virtual DOM – копію реального DOM-дерева елементів сторінки. У копії всі елементи представлені як об'єкт JavaScript. Ці елементи, разом із декларативним стилем програмування React та одностороннім зв'язуванням даних, спрощують та прискорюють розробку.</p>
+        <p class="tx-indent">Фреймворк має перевагу завдяки легкій масштабованості. Оскільки програми React використовують виключно JavaScript, розробники можуть використовувати традиційні методи організації коду. Можливість багаторазового використання компонентів підвищує масштабованість програм на React.</p>
+        <p class="tx-indent">Крім цього, React.js має плюси:</p>
+        <ul>
+            <li>У ньому зручно реалізована система компонентів – частин коду, що повторюються, які використовуються в різних умовах і обставинах і змінюються в залежності від контексту.</li>
+            <li>Кожен компонент залежить тільки від свого стану – отже, набагато легше усувати помилки в коді, якщо щось не працює або працює не так, як очікувалося. Тобто помилки стають очевидними: компонент, який працює коректно сам собою, завжди працюватиме коректно – якщо йому не передати якийсь неправильний стан.</li>
+        </ul>
+        <p class="tx-indent">React виділяється синтаксисом. Усі елементи інтерфейсу ми малюємо через звані render-функции. Ось як можна написати заголовок "Привіт, Світ!" на ньому:</p>
+        <pre>
+            ReactDOM.render(
+                &lt;h1&gt;Привіт, Світ!&lt;/h1&gt;,
+                document.getElementById(&apos;root&apos;)
+            );
+        </pre>
+        <h1>Vue.js</h1>
+        <p class="tx-indent">Один із найпопулярніших інструментів фронтендера. Це прогресивний JavaScript-фреймворк для створення UI та створення надшвидких, потужних, повністю адаптивних односторінкових веб-додатків (Single Page Application), що стрімко набирає популярності серед розробників.</p>
+        <p class="tx-indent">Vue.js був створений для задоволення конкретних потреб розробників та підтримує головні принципи архітектури MVC, тому його легко інтегрувати у будь-який проект. Він містить чимало корисного функціоналу, а саме:</p>
+        <ul>
+            <li>Шаблони Vue.js. В екосистемі Vue.js синтаксис шаблону на основі HTML використовується для підключення DOM до даних екземпляра.</li>
+            <li>Система реактивності. Крім шаблонів Vue.js має надійну систему реактивності. Моделі є прості JavaScript-об'єкти. У міру зміни яких за рахунок оновлення даних керування станом програми стає більш простим та очевидним.</li>
+            <li>Компоненти. За допомогою компонентів Vue.js можна повторно використовувати код. Це елементи, що налаштовуються, що допомагають компілятору працювати з максимальною ефективністю. Компонент – це свого роду наперед визначена опція в екземплярі Vue.js, що служить для прояснення абстракції.</li>
+            <li>Розширена робота з URL. Для керування URL-адресами використовується маршрутизація Vue.js. Коли користувач клацає на елемент сторінки, маршрутизатор змінює адресу, відображаючи її правильне уявлення.</li>
+            <li>Анімації та переходи. Можливість використання ефектів переходу при вставці, оновленні або видаленні елементів із DOM.</li>
+        </ul>
+        <p class="tx-indent">Vue створений значно пізніше аналогічних фреймворків від Angular та React, тому логічним чином врахував усі переваги та недоліки двох останніх.</p>
+        <p class="tx-indent">Приклад коду Vue:</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;
+                  &lt;meta&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;title&gt;Hello World in Vue.js&lt;/title&gt;
+                  &lt;/meta&gt;
+                  &lt;body&gt;
+                    &lt;div id=&quot;hello-world-app&quot;&gt;
+                      &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+                    &lt;/div&gt;
+                    &lt;script
+                      src=&quot;//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js&quot;&gt;
+                    &lt;/script&gt;
+                    &lt;script&gt;
+                      new Vue({
+                        el: &quot;#hello-world-app&quot;,
+                        data() {
+                          return {
+                            msg: &quot;Hello World!&quot;
+                          }
+                        }
+                      });
+                    &lt;/script&gt;
+                  &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </div>
+</main>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('bg-white', 'shadow');
+        } else {
+            nav.classList.remove('bg-white', 'shadow');
+        }
+    });
+</script>
+</body>
+</html>
