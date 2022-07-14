@@ -1,0 +1,23 @@
+.op-75{
+    opacity: 75%;
+}
+.course-content{
+    margin-top: 15%;
+}
+.ul-need { list-style-type: "✅ "; }
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tx-indent{
+    text-indent: 25px;
+}
