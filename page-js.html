@@ -100,9 +100,32 @@
           &lt;/body&gt;
     &lt;/html&gt;
         </pre>
+
+        <h1>Angular</h1>
+        <p class="tx-indent">Це фреймворк від компанії Google з відкритим вихідним кодом для створення сучасних односторінкових веб-проектів. Серед мов, що використовуються: TypeScript, JavaScript, Dart. Але насамперед він націлений на розробку Single Page Application та мову JavaScript.</p>
+        <p class="tx-indent">Фреймворк працює з HTML, що містить додаткові атрибути користувача, які описуються директивами, і пов'язує введення або виведення області сторінки з моделлю, що являє собою звичайні змінні JavaScript.</p>
+        <p class="tx-indent">Angular.js надає можливості для роботи з валідацією форм. Якщо на сторінці використовуються форми, FormController записує їхній стан. Використовуючи цю інформацію, можна задавати поведінку HTML-елементів у UI.</p>
+        <p class="tx-indent"> Шаблони в Angular.js є HTML-кодом, доповненим елементами та атрибутами Angular.js. Фреймворк доповнює шаблон інформацією з моделі, щоб показати користувачеві динамічну сторінку. Для обробки даних та форматування значень використовуються фільтри. Вони дозволяють показати необхідні дані користувачу без необхідності вносити зміни до вихідних даних.</p>
+        <p class="tx-indent">У Angular.js можна організовувати програми з окремих модулів. Такі модулі можуть залежати один від одного, так і бути автономними. Завдяки вбудованому механізму запровадження залежностей Angular.js сам розпізнає ситуацію, коли потрібно надати допоміжні об'єкти, надає їх та пов'язує об'єкти між собою.</p>
+        <p class="tx-indent">Також застосовується двостороннє зв'язування: будь-які зміни в інтерфейсі користувача відразу ж відображаються на об'єктах програми і навпаки. Фреймворк сам стежить за подіями браузера, змінами моделі та діями користувача на сторінці, щоб одразу оновлювати потрібні шаблони. При цьому в коді JavaScript не потрібно зберігати посилання на DOM-елементи та ними маніпулювати.</p>
+        <p class="tx-indent">Приклад коду Angular.js:</p>
+        <pre>
+    &lt;div ng-controller=&quot;studentsController as studentsCrtl&quot;&gt;
+        &lt;div ng-repeat=&quot;student in studentsCrtl.students&quot;&gt;
+
+            Name: &lt;span class=&quot;name&quot;&gt;{{student.name}}&lt;/span&gt;
+            Title: &lt;span class=&quot;title&quot;&gt;{{student.title}}&lt;/span&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+        </pre>
     </div>
 </main>
-
+<footer class="footer mt-auto py-3 bg-white shadow rounded">
+    <div class="container">
+        <span class="text-muted"> © 2022 Copyright: FrameWork. Всі права захищені.</span>
+    </div>
+</footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
     var nav = document.querySelector('nav');
